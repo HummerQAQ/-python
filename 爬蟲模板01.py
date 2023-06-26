@@ -1,9 +1,5 @@
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
-from selenium.webdriver.chrome.options import Options
-from webdriver_manager.chrome import ChromeDriverManager
-options = Options()
-options.add_experimental_option("detach",True)
-driver = webdriver.Chrome(service = Service(ChromeDriverManager().install()),
-                          options = Optoins)
-driver.get("https://taiwanvtuberdata.github.io/trending-vtubers")
+driver = webdriver.Chrome(service=Service('/usr/local/bin/chromedriver'))
+driver.get("http://google.com")
+input("Press Enter to close the browser...")
