@@ -4,7 +4,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-driver = webdriver.Chrome(service=Service('/usr/local/bin/chromedriver') #
+driver = webdriver.Chrome(service=Service('/usr/local/bin/chromedriver') #從本地庫呼叫Chromedriver
 driver.get("https://playboard.co/en/"） #導向目標網站
 search_box = driver.find_element(By.NAME, 'q')  # 導向頁面搜尋欄位
 search_box.send_keys('李聽')  # 輸入搜尋內容
